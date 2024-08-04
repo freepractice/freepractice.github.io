@@ -1,0 +1,36 @@
+
+:root {
+	--white-1: #faf7f2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: var(--white-1);
+}
+header {
+	text-align: center;
+}
+section.counter {
+	margin: 5rem 0;
+	text-align: center;
+}
+section.counter > div:nth-child(2) > p {
+	font-family: sans-serif;
+	font-size: 20rem;
+	font-weight: 100;
+	color: red;
+}
+section.counter > div:nth-child(4) {
+	display: none;
+	margin: 5rem 0;
+}
+section.counter > div:nth-child(4) > p {
+	font-family: sans-serif;
+	font-size: 10rem;
+	font-weight: 100;
+	color: blue;
+}

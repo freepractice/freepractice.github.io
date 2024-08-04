@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rep Counter</title>
+		<!-- <base href="/"> -->
+		<link rel="shortcut icon"  type="image/x-icon"   href="">
+		<link rel="icon" type="image/x-icon"  href="">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Rep Counter</h1>
+			<h2></h2>
+		</header>
+		<main>
+			<section class="counter">
+				<div>
+					<label for="Interval">Time interval:</label><br>
+					<input type="number" id="time-interval" name="time-interval"><br>					
+				</div>
+				<div>
+					<p>0</p>
+				</div>
+				<div>
+					<button onclick="startup()">Start</button>
+					<button onclick="stop()">Pause</button>
+					<button onclick="reset()">Reset</button>
+					<button onclick="clean()">Clean</button>					
+				</div>
+				<div>
+					<p>5</p>
+				</div>
+			</section>
+		</main>
+		<aside>
+		</aside>
+		<footer>
+		</footer>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
