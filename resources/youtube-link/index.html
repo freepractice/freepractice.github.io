@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YouTube Link | Free Practice</title>
+	<!-- <base href="/"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon">
+	<link rel="icon" type="image/x-icon" href="/favicon">
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+		<div class="header-navbar">
+			<div>
+				<div class="header-logo">
+					<div></div>
+					<h1><a href="/"><span id="header-title" class="lobster-400">freepractice.github.io</span></a></h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="input">
+			<div class="youtube-url">
+				<label for="youtube-url">YouTube Video URL</label><br>
+				<input id="youtube-url" name="YouTube Video URL" type="text" size="url">
+				<div class="controls">
+					<button onclick="url()">Go</button>
+					<button onclick="clean()">Clean</button>
+				</div>
+			</div>
+		</section>
+		<section class="output">
+			<div class="youtube-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/a3rAv6IGix4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+				</iframe>
+			</div>
+			<script>
+				function iframeSize() {
+					let windowSize = window.innerWidth;
+					if (windowSize <= 720) {
+						let iframe = document.querySelector('.youtube-video > iframe');
+						iframe.setAttribute('width', window.innerWidth*0.2*4);
+					}
+				} iframeSize();
+			</script>
+		</section>
+	</main>
+	<aside>
+		<button onclick="ventana()" style="margin: 5rem auto 1rem auto; width: 50%; height: 5vw; background: transparent;">VENTANA</button>
+		<p id="informa" style="margin-left: 5rem; font-size: 5rem; font-family: monospace; color: white;"></p>
+	</aside>
+	<footer>
+	</footer>
+<div class="page-background"></div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

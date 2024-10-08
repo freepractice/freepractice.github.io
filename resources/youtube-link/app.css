@@ -1,0 +1,82 @@
+/* Text Fonts */
+.youtube-url > label {
+	font-family: 'ubuntu', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+button[onclick="url()"], button[onclick="clean()"] {
+	font-family: 'Ubuntu',sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+/**/
+body {
+	background: linear-gradient(270deg, #5a9279, #799479);
+}
+/* Input Section */
+.input {
+	margin: 2vw auto;
+	width: 70%;
+	/* background: rgb(169 164 25 / 70%); */
+	/* background: linear-gradient(330deg, rgb(131 119 38 / 70%), rgb(8 76 13 / 70%)); */
+	background: linear-gradient(330deg, rgb(131 119 38 / 70%), rgb(8 51 76 / 70%));
+	padding: 2vw 0;
+	border-radius: 100px;
+}
+.youtube-url {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.youtube-url > label {
+	font-size: 1.4rem;
+	/* color: var(--white-1); */
+	color: #ffcb4f;
+	text-shadow: 1px 3px 5px rgb(10 10 10);
+}
+.controls {
+	margin: 1vw 0 0 0;
+}
+button[onclick="url()"], button[onclick="clean()"] {
+	font-size: 1rem;
+	margin: 0 1rem;
+	padding: 0.2rem;
+	border-radius: 5px;
+	background: #0f5e23;
+	color: rgb(250 250 250);
+	border: 2px solid white;
+}
+input#youtube-url {
+	width: 50vw;
+	height: 1.7rem;
+	font-family: monospace;
+	color: #27ff00;
+	text-indent: 0.5rem;
+	background: rgb(10 10 10);
+}
+/**/
+.output {
+	display: flex;
+	justify-content: center;
+}
+.page-background {
+	width: 100%;
+	/* height: 100%; */
+	min-height: 925px;
+	background-image: url(/img/background-002.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+/* Responsive Desing */
+@media only screen and (max-width: 576px) {
+	.youtube-url > label {
+		font-size: 1.2rem;
+	}
+	.input {
+		width: 80%;
+	}
+}
