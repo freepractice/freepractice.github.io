@@ -24,7 +24,7 @@
 	<main>
 		<section class="input">
 			<div class="youtube-url">
-				<label for="youtube-url">YouTube Video URL</label><br>
+				<label for="youtube-url">YouTube Video URL</label>
 				<input id="youtube-url" name="YouTube Video URL" type="text" size="url">
 				<div class="controls">
 					<button onclick="url()">Go</button>
@@ -34,10 +34,16 @@
 		</section>
 		<section class="output">
 			<div class="youtube-video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/a3rAv6IGix4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+				<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur.</p>
+				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/a3rAv6IGix4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> -->
 				</iframe>
 			</div>
 			<script>
+				/*
 				function iframeSize() {
 					let windowSize = window.innerWidth;
 					if (windowSize <= 720) {
@@ -45,6 +51,7 @@
 						iframe.setAttribute('width', window.innerWidth*0.2*4);
 					}
 				} iframeSize();
+				*/
 			</script>
 		</section>
 	</main>

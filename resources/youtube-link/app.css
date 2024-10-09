@@ -15,12 +15,13 @@ body {
 }
 /* Input Section */
 .input {
-	margin: 2vw auto;
+	margin: 2rem auto;
+	/* margin: 2vw auto; */
+	padding: 2vw 0;
 	width: 70%;
 	/* background: rgb(169 164 25 / 70%); */
 	/* background: linear-gradient(330deg, rgb(131 119 38 / 70%), rgb(8 76 13 / 70%)); */
 	background: linear-gradient(330deg, rgb(131 119 38 / 70%), rgb(8 51 76 / 70%));
-	padding: 2vw 0;
 	border-radius: 100px;
 }
 .youtube-url {
@@ -29,14 +30,14 @@ body {
 	align-items: center;
 }
 .youtube-url > label {
-	font-size: 1.4rem;
-	/* color: var(--white-1); */
+	font-size: 18px;
 	color: #ffcb4f;
 	text-shadow: 1px 3px 5px rgb(10 10 10);
 }
+/*
 .controls {
-	margin: 1vw 0 0 0;
 }
+*/
 button[onclick="url()"], button[onclick="clean()"] {
 	font-size: 1rem;
 	margin: 0 1rem;
@@ -47,6 +48,7 @@ button[onclick="url()"], button[onclick="clean()"] {
 	border: 2px solid white;
 }
 input#youtube-url {
+	margin: 10px auto;
 	width: 50vw;
 	height: 1.7rem;
 	font-family: monospace;
@@ -55,6 +57,12 @@ input#youtube-url {
 	background: rgb(10 10 10);
 }
 /**/
+/* Output Section */
+.youtube-video {
+	width: 560px;
+	height: 315px;
+	background: black;
+}
 .output {
 	display: flex;
 	justify-content: center;
@@ -73,10 +81,28 @@ input#youtube-url {
 }
 /* Responsive Desing */
 @media only screen and (max-width: 576px) {
+	/*
 	.youtube-url > label {
 		font-size: 1.2rem;
 	}
+	*/
 	.input {
 		width: 80%;
 	}
 }
+.lorem {
+	color: white;
+	font-family: sans-serif;
+	font-size: 13.5px;
+	text-align: justify;
+	margin: 1rem;
+	line-height: 25px;
+	letter-spacing: 0.5px;
+}
+/*
+@media only screen and (max-width: 720px) {
+	.youtube-url > label {
+		font-size: 1.3rem;
+	}
+}
+*/
